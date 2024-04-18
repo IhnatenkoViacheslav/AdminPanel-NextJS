@@ -1,0 +1,22 @@
+.wrapper {
+    @apply relative block;
+
+    .form {
+        @apply absolute p-4 right-2 w-60 z-20 rounded-lg;
+        top: calc(100% + 1.4rem);
+        background-color: #fff;
+
+        .loginButton {
+            @apply mt-5 mb-1 text-center;
+        }
+
+        .register {
+            @apply mt-2 text-gray-400 font-light w-full bg-white block text-center hover:underline;
+            font-size: 1rem;
+        }
+    }
+
+    .button {
+        @apply shadow-icon
+    }
+}

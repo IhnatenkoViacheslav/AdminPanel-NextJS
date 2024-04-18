@@ -1,0 +1,21 @@
+.reviewItem {
+    @apply p-4 rounded-lg mb-4;
+    background-color: #D3DAF0;
+    color: #222;
+
+    .author {
+        @apply flex items-center;
+
+        img {
+            @apply rounded-full;
+        }
+
+        >div {
+            @apply ml-2 font-semibold;
+        }
+
+    }
+    >article {
+        @apply mt-4 text-sm;
+    }
+}

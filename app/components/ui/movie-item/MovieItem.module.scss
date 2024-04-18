@@ -1,0 +1,34 @@
+.item {
+    @apply relative;
+    width: 18vw;
+    .rating {
+        @apply z-10 absolute -left-2 top-1 text-xs bg-green-600 text-white rounded-md py-1 px-3 text-center;
+    }
+
+    .poster {
+        @apply rounded-lg overflow-hidden;
+    }
+
+    .heading {
+        @apply text-black mt-3 font-medium transition-colors;
+    }
+
+    &:hover {
+        .heading {
+            @apply text-primary
+        }
+    }
+
+    &.small {
+        width: 10vw;
+        .rating {
+            @apply py-1 px-1.5;
+            font-size: 0.8rem;
+            line-height: 1;
+        }
+
+        .heading {
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import '../../../../../assets/styles/mixins.scss';
+
+.search_top {
+    @apply mx-auto relative;
+    max-width: 600px;
+}
+
+.result {
+    @apply flex justify-center flex-wrap absolute z-10 p-5 mt-3 rounded-lg;
+    max-width: 600px;
+    gap: 2rem;
+    background-color: #fff;
+    left: -144px;
+    @include shadow();
+
+    >div {
+        @apply mr-4 last:mr-0;
+        width: 23%;
+    }
+}

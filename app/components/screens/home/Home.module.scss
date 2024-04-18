@@ -1,0 +1,7 @@
+.heading {
+    @apply text-xl text-black mb-5 font-semibold;
+}
+
+.catalog {
+    @apply flex flex-wrap gap-8 px-2;
+}
