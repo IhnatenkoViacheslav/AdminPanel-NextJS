@@ -1,0 +1,5 @@
+.wrapper {
+    @apply grid gap-10 rounded-xl px-2;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+}

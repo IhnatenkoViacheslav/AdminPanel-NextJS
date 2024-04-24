@@ -1,0 +1,32 @@
+.fees {
+    @apply h-full flex flex-col text-white px-4 rounded-xl relative; 
+    padding: 80px 0 40px 0;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top right, #813bfb, #3f68fe);
+    box-shadow: -5px 10px 10px 0 rgba(37, 12, 171, 0.4);
+
+    .icon {
+        @apply text-2xl mb-12;
+    }
+    .name {
+        @apply font-light;
+        font-size: 18px;
+        opacity: 0.7;
+    }
+    .count {
+        @apply text-lg;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: -5px;
+        width: 40%;
+        height: 50px;
+        right: 31%;
+        transform: perspective(80px) rotateX(-45deg);
+        border-radius: 0px 0px 20px 20px;
+        background-color: #E8EAFC;
+    }
+}

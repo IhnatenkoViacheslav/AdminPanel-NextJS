@@ -1,0 +1,20 @@
+.table {
+    @apply flex flex-col-reverse gap-2;
+}
+
+.table__item {
+    @apply flex flex-wrap items-center bg-white w-full p-2 rounded-lg gap-6;
+
+    .item__link {
+        align-self: center;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            color: #5f3df7;
+        }
+        >button {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

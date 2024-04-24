@@ -1,0 +1,25 @@
+.progress {
+    @apply relative text-center mt-2 mb-2;
+
+    .overflow {
+        @apply relative overflow-hidden w-40 h-20 -mb-4 mx-auto;
+
+        .bar {
+            @apply absolute top-0 left-0 w-40 h-40 rounded-full box-border;
+            border: 35px solid #fff;
+            border-bottom-color: #0bf;
+            border-right-color: #0bf;
+            box-shadow: inset 0px 0px 15px 4px rgba(37, 12, 171, 0.4);
+        }
+
+        // &::before {
+        //     @apply absolute top-0 left-0 w-32 h-32 rounded-full box-border;
+        //     content: '';
+        //     background: linear-gradient(to right, red, yellow, green);
+        // }
+    }
+
+    .percent {
+        @apply font-semibold relative bottom-1.5;
+    }
+}
